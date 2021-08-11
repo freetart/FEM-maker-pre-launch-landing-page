@@ -1,0 +1,14 @@
+{
+  "name": "maker-pre-launch-landing-page",
+  "version": "1.0.0",
+  "description": "landing page challenge for frontend mentor",
+  "scripts": {
+    "server": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
