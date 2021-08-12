@@ -399,3 +399,33 @@ cta
   background-color: var(--teal);
   border: 0.1rem solid var(--teal);
 }
+
+/* tag */
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: var(--black);
+}
+
+.tag__heading {
+  font-size: var(--xxs);
+  color: var(--white);
+}
+
+.tag__link {
+  color: var(--teal);
+  outline: 0;
+}
+
+.tag__link:hover,
+.tag__link:focus {
+  text-decoration: underline;
+}
+
+.tag__logo {
+  width: 5rem;
+}
