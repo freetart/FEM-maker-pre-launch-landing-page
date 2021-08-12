@@ -119,6 +119,103 @@ global classes
 
 /*
 =============== 
+preloader
+===============
+*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--black);
+  display: grid;
+  place-items: center;
+  visibility: visible;
+  z-index: 2000;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.preloader__content {
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+
+.preloader__heading {
+  font-size: var(--lg);
+  color: var(--teal);
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.preloader__spinner {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.preloader__half-circle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid transparent;
+  border-top-color: var(--teal);
+  border-radius: 50%;
+  animation: spinnerOne 1.5s linear infinite;
+}
+
+.preloader__half-circle:nth-child(2) {
+  border: 10px solid transparent;
+  border-bottom-color: var(--teal);
+  animation: spinnerTwo 1.5s linear infinite;
+}
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0deg);
+    border-width: 10px;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-width: 1px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
+@keyframes spinnerTwo {
+  0% {
+    transform: rotate(0deg);
+    border-width: 1px;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-width: 10px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-width: 1px;
+  }
+}
+
+.hide-preloader {
+  z-index: -1000;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*
+=============== 
 nav
 ===============
 */
@@ -435,4 +532,24 @@ tag
 
 .tag__logo {
   width: 5rem;
+}
+
+/*
+=============== 
+media queries
+===============
+*/
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
 }
