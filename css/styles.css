@@ -254,3 +254,110 @@ features
   font-size: 1.5rem;
   color: var(--gray);
 }
+
+/*
+=============== 
+section title
+===============
+*/
+
+.section-title {
+  text-align: center;
+  padding: 5rem 2rem 10rem 2rem;
+}
+
+.section-title__heading {
+  font-size: 3.2rem;
+}
+
+.section-title__desc {
+  color: var(--gray);
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/*
+=============== 
+plans
+===============
+*/
+
+.plans {
+  padding: 10rem 2rem;
+}
+
+.plans__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
+.plan {
+  padding: 3rem;
+  border-radius: var(--main-radius);
+}
+
+.plan__content--left {
+  transform: translateY(-2rem);
+}
+
+.plan__content--right {
+  transform: translateY(-4rem);
+}
+
+.plan--free {
+  background-color: var(--darkblue);
+}
+
+.plan--paid {
+  background-color: var(--teal);
+  color: var(--black);
+}
+
+.plan__icon {
+  width: 7rem;
+  transform: translateY(-6rem);
+}
+
+.plan__icon--right {
+  transform: translateY(-8rem);
+}
+
+.plan__title {
+  font-size: 2.5rem;
+}
+
+.plan__desc {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.plan__price {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.plan__price-span {
+  font-size: 1.5rem;
+}
+
+.plan__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.plan__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.plan__check {
+  width: 2rem;
+}
