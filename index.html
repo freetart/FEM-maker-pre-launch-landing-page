@@ -270,16 +270,19 @@
         />
         <div class="cta__content">
           <h2 class="cta__title heading-styles">Get notified when we launch</h2>
-          <div class="cta__input-container">
-            <input
-              class="cta__input text-styles"
-              type="email"
-              placeholder="Email address"
-            />
+          <form class="cta__form">
+            <div class="cta__input-container">
+              <input
+                class="cta__input text-styles"
+                type="text"
+                placeholder="Email address"
+              />
+              <small class="cta__message"></small>
+            </div>
             <button class="cta__submit text-styles" type="submit">
               Get notified
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
@@ -310,7 +313,7 @@
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({ offset: 100, duration: 1000, once: true });
+      AOS.init({ offset: 1, duration: 1000, once: true });
     </script>
     <!-- main js -->
     <script type="module" src="./js/script.js"></script>

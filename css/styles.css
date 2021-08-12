@@ -471,9 +471,18 @@ cta
   padding-bottom: 2rem;
 }
 
-.cta__input-container {
+.cta__form {
   display: flex;
   gap: 3rem;
+  position: relative;
+}
+
+.cta__message {
+  position: absolute;
+  color: var(--red);
+  font-size: 1.2rem;
+  bottom: -2rem;
+  left: 2rem;
 }
 
 .cta__input,
