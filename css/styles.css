@@ -123,38 +123,18 @@ nav
 */
 
 .nav {
-  position: fixed;
   width: 100%;
-  background-color: hsla(230, 60%, 8%, 0.9);
-  z-index: 100;
 }
 
 .nav__content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
 }
 
 .nav__logo {
   width: 20rem;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.nav__link {
-  color: var(--white);
-  transition: var(--main-transition);
-  font-size: 2rem;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--teal);
 }
 
 /*
@@ -167,7 +147,7 @@ hero
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
 .hero__info {
@@ -360,4 +340,62 @@ plans
 
 .plan__check {
   width: 2rem;
+}
+
+/*
+=============== 
+cta
+===============
+*/
+
+.cta {
+  position: relative;
+}
+
+.cta__bg-pattern {
+  position: absolute;
+  z-index: 1;
+}
+
+.cta__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 5;
+  padding: 10rem 2rem;
+}
+
+.cta__title {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.cta__input-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.cta__input,
+.cta__submit {
+  outline: 0;
+  border-radius: var(--secondary-radius);
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+}
+
+.cta__input {
+  background-color: var(--darkblue);
+  border: 0.1rem solid var(--darkblue);
+  color: var(--white);
+}
+
+.cta__input::placeholder {
+  color: var(--white);
+}
+
+.cta__submit {
+  background-color: var(--teal);
+  border: 0.1rem solid var(--teal);
 }
