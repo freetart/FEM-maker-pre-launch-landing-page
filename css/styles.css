@@ -68,6 +68,7 @@ body {
   background-color: var(--black);
   color: var(--white);
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -266,6 +267,7 @@ plans
 
 .plans {
   padding: 10rem 2rem;
+  overflow-x: hidden;
 }
 
 .plans__content {
@@ -400,7 +402,12 @@ cta
   border: 0.1rem solid var(--teal);
 }
 
-/* tag */
+/*
+=============== 
+tag
+===============
+*/
+
 .tag {
   display: flex;
   align-items: center;

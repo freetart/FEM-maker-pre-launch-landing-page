@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- favicon -->
     <link rel="icon" href="./images/favicon/koala.ico" />
     <!-- css -->
@@ -23,8 +25,9 @@
         class="hero__illustration hero__illustration--left"
         src="./images/illustration-hero-left.svg"
         alt=""
+        data-aos="fade-right"
       />
-      <div class="hero__info">
+      <div class="hero__info" data-aos="fade-in" data-aos-delay="300">
         <img
           class="hero__bg-pattern"
           src="./images/bg-hero-squiggle.svg"
@@ -47,12 +50,13 @@
         class="hero__illustration hero__illustration--right"
         src="./images/illustration-hero-right.svg"
         alt=""
+        data-aos="fade-left"
       />
     </header>
 
     <main>
       <!-- features -->
-      <section class="features">
+      <section class="features" data-aos="fade-in" data-aos-delay="200">
         <div class="container features__content">
           <!-- single feature -->
           <article class="feature">
@@ -121,7 +125,7 @@
       <section class="plans">
         <div class="container">
           <!-- section title -->
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="200">
             <h2 class="section-title__heading heading-styles">
               Our pricing plans
             </h2>
@@ -132,7 +136,7 @@
           </div>
           <div class="plans__content">
             <!-- single plan -->
-            <article class="plan plan--free">
+            <article class="plan plan--free" data-aos="fade-right">
               <img
                 class="plan__icon"
                 src="./images/icon-free.svg"
@@ -186,7 +190,7 @@
               </div>
             </article>
             <!-- single plan -->
-            <article class="plan plan--paid">
+            <article class="plan plan--paid" data-aos="fade-left">
               <img
                 class="plan__icon plan__icon--right"
                 src="./images/icon-paid.svg"
@@ -247,7 +251,7 @@
       </section>
 
       <!-- cta -->
-      <section class="cta">
+      <section class="cta" data-aos="fade-in" data-aos-delay="200">
         <img
           class="cta__bg-pattern"
           src="./images/bg-footer-squiggle.svg"
@@ -291,6 +295,12 @@
       </h3>
       <img src="./images/logo/habibdevgif.gif" alt="logo" class="tag__logo" />
     </footer>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 100, duration: 1000, once: true });
+    </script>
     <!-- main js -->
     <script src="./js/script.js"></script>
   </body>
