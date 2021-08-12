@@ -28,7 +28,7 @@ variables
 
   /* radius */
   --main-radius: 1rem;
-  --secondary-radius: 5rem;
+  --secondary-radius: 4rem;
 
   /* shadows */
   --main-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.1);
@@ -126,6 +126,7 @@ nav
   position: fixed;
   width: 100%;
   background-color: hsla(230, 60%, 8%, 0.9);
+  z-index: 100;
 }
 
 .nav__content {
@@ -203,4 +204,53 @@ hero
 
 .hero__icon {
   width: 3rem;
+}
+
+/*
+=============== 
+features
+===============
+*/
+
+.features {
+  padding: 20rem 2rem 10rem 2rem;
+}
+
+.features__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10rem;
+}
+
+.feature {
+  text-align: left;
+}
+
+.feature:nth-child(odd) {
+  transform: translateY(-50px);
+}
+
+.feature__img-container {
+  background-color: var(--darkblue);
+  border-radius: var(--secondary-radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature__img {
+  width: 10rem;
+}
+
+.feature__img-lg {
+  width: 16.5rem;
+}
+
+.feature__title {
+  font-size: 1.8rem;
+  padding: 2rem 0;
+}
+
+.feature__desc {
+  font-size: 1.5rem;
+  color: var(--gray);
 }
