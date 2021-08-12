@@ -125,13 +125,14 @@ nav
 .nav {
   position: fixed;
   width: 100%;
+  background-color: hsla(230, 60%, 8%, 0.9);
 }
 
 .nav__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--section-spacing);
+  padding: 2rem;
 }
 
 .nav__logo {
@@ -153,4 +154,53 @@ nav
 .nav__link:hover,
 .nav__link:focus {
   color: var(--teal);
+}
+
+/*
+=============== 
+hero
+===============
+*/
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-top: 15rem;
+}
+
+.hero__info {
+  text-align: center;
+  position: relative;
+}
+
+.hero__bg-pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 5;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: 4.8rem;
+}
+
+.hero__title-span {
+  color: var(--teal);
+}
+
+.hero__lead {
+  color: var(--gray);
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.hero__icon {
+  width: 3rem;
 }
