@@ -18,7 +18,6 @@ const validateEmail = () => {
     const inputGroup = input.parentElement;
     const errorMessage = inputGroup.querySelector(".cta__message");
     errorMessage.innerText = message;
-    inputGroup.className = "cta__form error";
     emailInput.style.border = "0.1rem solid var(--red)";
   };
 
