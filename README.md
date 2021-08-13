@@ -1,6 +1,8 @@
 # FEM-maker-pre-lauch-landing-page
 landing page challenge for frontend mentor
 
+site: https://fem-maker-pre-launch-landing-page-challenge.netlify.app/
+
 #### Features
 - clientside email validation
 - responsive design
