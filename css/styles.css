@@ -246,7 +246,7 @@ hero
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding-top: 10rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .hero__info {
@@ -631,6 +631,14 @@ media queries
 }
 
 @media (max-width: 510px) {
+  .section-title {
+    padding: 5rem 2rem;
+  }
+
+  .features {
+    padding: 10rem 2rem;
+  }
+
   .cta__content {
     text-align: center;
   }
