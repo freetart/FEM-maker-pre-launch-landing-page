@@ -13,6 +13,6 @@ site: https://fem-maker-pre-launch-landing-page-challenge.netlify.app/
 - css
 - javascript w/ modules
 
-#### Dependencies
+#### Libraries
 - live-server
 - aos.js
